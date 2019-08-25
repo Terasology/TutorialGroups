@@ -1,0 +1,9 @@
+{
+  "parent" : "greenDeer",
+  "GroupFleeOnHit" : {
+      "minDistance" : 5
+    },
+  "GroupTag" : {
+       "groups" : [ "wiseDeers" ]
+     }
+}

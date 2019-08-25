@@ -1,0 +1,12 @@
+{
+    "id" : "TutorialGroups",
+    "version" : "0.1.0-SNAPSHOT",
+    "author" : "casals",
+    "displayName" : "TutorialGroups",
+    "description" : "Tutorial module for the wiki case study",
+    "dependencies" : [
+            {"id" : "Behaviors", "minVersion" : "0.2.0"},
+            { "id": "WildAnimals", "minVersion": "0.2.0" }
+        ],
+    "serverSideOnly" : false
+}
