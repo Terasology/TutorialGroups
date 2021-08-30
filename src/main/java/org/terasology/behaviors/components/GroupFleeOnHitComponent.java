@@ -15,7 +15,7 @@
  */
 package org.terasology.behaviors.components;
 
-import org.terasology.entitySystem.Component;
+import org.terasology.engine.entitySystem.Component;
 
 /**
  * If this components is attached to an NPC entity it will exhibit the flee-on-hit behavior
