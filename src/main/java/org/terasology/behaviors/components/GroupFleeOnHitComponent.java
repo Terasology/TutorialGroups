@@ -15,7 +15,7 @@
  */
 package org.terasology.behaviors.components;
 
-import org.terasology.engine.entitySystem.Component;
+import org.terasology.gestalt.entitysystem.component.Component;
 
 /**
  * If this components is attached to an NPC entity it will exhibit the flee-on-hit behavior
@@ -24,9 +24,15 @@ import org.terasology.engine.entitySystem.Component;
  * When it reaches a safe distance the instigator is set to null. This component uses
  * @see FleeOnHitComponent as a reference/basis.
  */
-public class GroupFleeOnHitComponent implements Component {
+public class GroupFleeOnHitComponent implements Component<GroupFleeOnHitComponent> {
     /* Minimum distance from instigator after which the NPC will stop 'flee'ing */
     public float minDistance = 10f;
     /* Speed factor by which flee speed increases */
     public float speedMultiplier = 1.2f;
+
+    @Override
+    public void copyFrom(GroupFleeOnHitComponent other) {
+        this.minDistance = other.minDistance;
+        this.speedMultiplier = other.speedMultiplier;
+    }
 }
